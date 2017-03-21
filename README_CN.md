@@ -36,8 +36,8 @@
 
 ## 3. 安装项目依赖
 ```
-cd node_tumblr_spider
-npm install -d
+    cd node_tumblr_spider
+    npm install -d
 ```
 
 ## 4. 运行爬虫
@@ -46,8 +46,7 @@ npm install -d
 
 可以在终端下运行`ping www.tumblr.com`看下网络是否通畅
 ```
-cd bin
-node main.js &·
+    npm start
 ```
 
 如果有树莓派或者智能路由一类的设备就再好不过了，可以开着让它一直去爬。

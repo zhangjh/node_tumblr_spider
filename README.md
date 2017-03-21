@@ -22,32 +22,32 @@
 Welcome to cantact me.
 
 # Usage
-1. Install
+## 1. Install 
 
 　Visit Node.js official website to install the latest node enviroment. 
 
 　It's better to install babun, a better terminal replacement of cmd on Windows system.
 
-2. Dependence
+## 2. Dependence
 
 　It uses redis as queue. So you must [install redis](https://redis.io/) first.
 
-3. Download Project
+## 3. Download Project
 
 　[zip](https://github.com/zhangjh/node_tumblr_spider/archive/master.zip) OR `git clone https://github.com/zhangjh/node_tumblr_spider.git`
 
-4. Install dependence
+## 4. Install dependence
 ```
     cd node_tumblr_spider
     npm install -d
 ```
 
-5. Start to crawl
+## 5. Start to crawl
 ```
    npm run start
 ```
 
-6. About configuration
+## 6. About configuration
 
 　You can modify the configuration at `./conf/config.js`.
 ```

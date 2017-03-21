@@ -1,17 +1,17 @@
 /*jshint esversion: 6 */
+/**
+ * Created by zhangjihong on 2017/3/17.
+ * Des: Main function, the entry of the spider.
+ */
 let common = require('../lib/common');
 let redis = require('../lib/redis').redis;
 let request = require('request');
 
-//设置默认爬取起始点及爬取深度
-const user = process.argv.slice(2)[0] || USER;
-const depth = process.argv.slice(2)[1];
-
-let torrent_url = API_URL_PRE + user + ".tumblr.com/posts/" + TYPE + "?api_key=" + API_KEY + "&reblog_info=true";
+let torrent_url = API_URL_PRE + USER + ".tumblr.com/posts/" + TYPE + "?api_key=" + API_KEY + "&reblog_info=true";
 console.log("Starting url: " + torrent_url);
 
 function getTotalPage(url) {
-  const p = new Promise((resolve,reject) => {
+  return new Promise((resolve,reject) => {
     console.log(url);
     request(url, (e, r, b) => {
       if (e) {
@@ -22,7 +22,6 @@ function getTotalPage(url) {
       }
     });
   });
-  return p;
 }
 
 function doGet(url, page, totalPage) {

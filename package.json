@@ -1,9 +1,10 @@
 {
-  "name": "tumblr-spider",
+  "name": "node_tumblr_spider",
   "version": "1.0.0",
   "description": "tumblr spider",
   "main": "main.js",
   "scripts": {
+    "start": "cd bin && node main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -13,14 +14,23 @@
     "node",
     "javascript"
   ],
-  "author": "njhxzhangjihong@126.com",
-  "license": "ISC",
+  "author": "njhxzhangjh@gmail.com",
+  "license": "GPL-3.0",
   "dependencies": {
-    "@zalando/oauth2-client-js": "0.0.17",
-    "md5": "^2.2.1",
-    "oauth20-provider": "^0.6.0",
     "redis": "^2.7.1",
     "request": "^2.81.0",
     "tumblr.js": "^1.1.1"
-  }
+  },
+  "bin": {
+    "node_tumblr_spider": "main.js"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangjh/node_tumblr_spider.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zhangjh/node_tumblr_spider/issues"
+  },
+  "homepage": "https://github.com/zhangjh/node_tumblr_spider#readme"
 }

@@ -15,7 +15,7 @@
 
 - [Weibo](http://weibo.com/jhspider)
 
-- [My Blog -- Dante notes](http://5941740.cn)
+- [My Blog -- Dante notes](http://zhangjh.me)
 
 - [favLinks](http://favlink.me)
 

@@ -17,7 +17,7 @@
 
 - [My Blog -- Dante notes](http://zhangjh.me)
 
-- [favLinks](http://favlink.me)
+- [favLinks](http://favlink.cn)
 
 Welcome to cantact me.
 

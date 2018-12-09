@@ -29,6 +29,9 @@
   
 　项目依赖redis作为队列管理，需要安装redis服务
 　[安装redis](http://www.redis.cn/download.html)
+ 
+  **下载 -> 解压：tar xvf xxx.tgz -> 编译：make -> 运行：cd src && ./redis-server**
+
 
 ## 2. 下载
 

@@ -24,11 +24,11 @@ function getTotalPage(url) {
   });
 }
 
-function doGet(url, page, totalPage) {
-  common.sendRequest(url, page, () => {
+function doGet(user,url, page, totalPage) {
+  common.sendRequest(user,url, page, () => {
     common.sleep(60 * 1000, () => {
       if (page++ <= totalPage) {
-        doGet(url, page, totalPage);
+        doGet(user,url, page, totalPage);
       } else {
         console.log("One user download all done.");
         redis.spop("users",function (err, reply) {
@@ -43,7 +43,7 @@ function doGet(url, page, totalPage) {
               process.exit();
             }else {
               let url = API_URL_PRE + reply + ".tumblr.com/posts/" + TYPE + "?api_key=" + API_KEY + "&reblog_info=true";
-              main(url);
+              main(url,reply);
             }
           }
         });
@@ -53,14 +53,14 @@ function doGet(url, page, totalPage) {
   });
 }
 
-function main(url) {
+function main(url,user) {
   getTotalPage(url).then(totalPages => {
     console.log(totalPages);
-    doGet(url,0,totalPages);
+    doGet(user,url,0,totalPages);
   }).catch(e => {
     console.log("Error:" + e);
   });
 }
 
 // Start from torrent url
-main(torrent_url);
+main(torrent_url,USER);

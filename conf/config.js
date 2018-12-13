@@ -7,7 +7,7 @@ API_KEY = "rubC6NTRYd6rMMqWIjMFaV213yMtxEGVHYF8TLn6HHfmQoo2VL";
 // Download type: video,photo,audio and etc
 TYPE = "video";
 // Download dirname,
-DOWN_LOAD_PRE = "../download/";
+DOWN_LOAD_PRE = "/mnt/share/视频/download/"
 //Redis conf
 REDIS_HOST = "localhost";
 REDIS_PORT = 6379;

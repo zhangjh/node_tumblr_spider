@@ -31,6 +31,8 @@ Welcome to cantact me.
 ## 2. Dependence
 
 　It uses redis as queue. So you must [install redis](https://redis.io/) first.
+ 
+  **download -> tar xvf xxx.tgz -> make -> cd src && ./redis-server**
 
 ## 3. Download Project
 
